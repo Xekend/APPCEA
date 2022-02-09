@@ -1,76 +1,79 @@
 .contenido {
-    margin: 0;
-    background: linear-gradient(45deg, #49a09d, #5f2c82);
-    height: 100%;
+  margin: 0;
+  /*background: linear-gradient(45deg, #49a09d, #5f2c82); */
+  background: var(--primary-color);
+  height: 100%;
+  transition: var(--tran-05);
 
-    font-weight: 100;
+  font-weight: 100;
 }
 
 container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-   
-
-
-
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-table {
+table {  /*Table with Date */
+  top: 50%;
+  position: relative;
+  bottom: 50%;
+  border-radius: 25px;
 
-    top:50%;
-    position: relative;
-    bottom: 50%;
-    
+  width: 95%;
+  border-collapse: collapse;
+  overflow: hidden;
+  margin: auto;
+  justify-content: center;
 
-    width: 95%;
-    border-collapse: collapse;
-    overflow: hidden;
-    margin: auto;
-    justify-content: center;
-    
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 th,
 td {
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #fff;
+  padding: 15px;
+  
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: 1px;
 }
 
 th {
-    text-align: left;
+  text-align: left;
 }
 
 thead th {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+table :hover {
+ 
+  background-color:  #0039f5;
+ 
+}
+
+table.dark :hover{
     background-color: rgba(255, 255, 255, 0.3);
-}
-
-
-td {
-    position: relative;
-}
-
-td :hover {
-
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: -9999px;
-    bottom: -9999px;
-    background-color: rgba(255, 255, 255, 0.2);
-    z-index: -1;
-
 
 }
 
 .titlediv {
-    text-align: center;
-    justify-items: center;
-    
-    height: 200px;
+  text-align: center;
+  justify-items: center;
+
+  height: 200px;
 }
 
+
+
+/*Serch Item Bar */
+.Search-item{
+  border-radius: 40px;
+  padding: 10px;
+  color:Black
+}
+
+.Search-item:hover{
+  background-color:rgba(207, 186, 186, 0.384);
+}

@@ -3,14 +3,17 @@ const path = require("path");
 
 // require('@electron/remote/main').initialize()
 // require("@electron/remote/main").enable(webContents)
+//app.disableHardwareAcceleration() //para Deshabilitar la Aceleracion por Hardware
 
 let _window = null;
 
+
 app.on("ready", () => {
     
-    _window = new BrowserWindow({
-        width: 1200,
-        height: 720,
+    _window = new BrowserWindow({       
+        
+        width: 1280,
+        height: 820,
         webPreferences : { 
             nodeIntegration : true , 
             // contextIsolation : false,
@@ -36,3 +39,5 @@ ipcMain.on('openDialog', (event, args) => {
     const dir = dialog.showOpenDialogSync(_window, {properties: ['openFile', 'openDirectory']})
     event.returnValue = dir;
 })
+
+

@@ -1,78 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!----======== CSS ======== -->
-    <link rel="stylesheet" href="./css/custom.css">
-    <link rel="stylesheet" href="css/inventory.css">
+    <link rel="stylesheet" href="./css/custom.css" />
+    <link rel="stylesheet" href="css/inventory.css" />
 
     <!----===== Boxicons CSS ===== -->
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet"/>
 
     <title>Inventario</title>
 
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    
-</head>
+  </head>
 
-<body>
-
-
+  <body>
     <nav class="sidebar close">
-        <header>
-            <div class="image-text">
-                <span class="image">
-                    <a href="./index.html">
-                        <img src="./assets/logo.jpg" alt="">
-                    </a>
-                </span>
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <a href="./index.html">
+              <img src="./assets/logo2.jpg" alt="" />
+            </a>
+          </span>
 
-                <div class="text logo-text">
-                    <span class="name">CDT DEV</span>
-                    <span class="profession">Registro de Inventario</span>
-                </div>
-            </div>
+          <div class="text logo-text">
+            <span class="name">CDT DEV</span>
+            <span class="profession">Registro de Inventario</span>
+          </div>
+        </div>
 
-            <i class='bx bx-chevron-right toggle'></i>
-        </header>
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
 
-        <div class="menu-bar">
-            <div class="menu">
+      <div class="menu-bar">
+        <div class="menu">
+          <li class="search-box">
+            <i class="bx bx-search icon"></i>
+            <input type="text" id="inp_browse" placeholder="Search..." />
+          </li>
 
-                <li class="search-box">
-                    <i class='bx bx-search icon'></i>
-                    <input type="text" id="inp_browse" placeholder="Search...">
-                </li>
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="./save_item.html">
+                <!-- <i class='bx bx-home-alt icon'></i> -->
+                <i class="bx bx-add-to-queue icon"></i>
+                <span class="text nav-text">Añadir</span>
+              </a>
+            </li>
 
-                <ul class="menu-links">
-                    <li class="nav-link">
-                        <a href="./save_item.html">
-                            <!-- <i class='bx bx-home-alt icon'></i> -->
-                            <i class='bx bx-add-to-queue icon '></i>
-                            <span class="text nav-text">Añadir</span>
-                        </a>
-                    </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-data icon"></i>
+                <span class="text nav-text">Inventario</span>
+              </a>
+            </li>
 
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-data icon'></i>
-                            <span class="text nav-text">Inventario</span>
-                        </a>
-                    </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-printer icon"></i>
+                <span class="text nav-text">Imprimir</span>
+              </a>
+            </li>
 
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-printer icon'></i>
-                            <span class="text nav-text">Imprimir</span>
-                        </a>
-                    </li>
-
-                    <!-- <li class="nav-link">
+            <!-- <li class="nav-link">
                         <a href="#">
                             <i class='bx bx-pie-chart-alt icon'></i>
                             <span class="text nav-text">Analytics</span>
@@ -92,105 +87,134 @@
                             <span class="text nav-text">Wallets</span>
                         </a>
                     </li> -->
-
-                </ul>
-            </div>
-
-            <div class="bottom-content">
-
-
-                <li class="mode">
-                    <div class="sun-moon">
-                        <i class='bx bx-moon icon moon'></i>
-                        <i class='bx bx-sun icon sun'></i>
-                    </div>
-                    <span class="mode-text text">Dark mode</span>
-
-                    <div class="toggle-switch">
-                        <span class="switch"></span>
-                    </div>
-                </li>
-
-            </div>
+          </ul>
         </div>
 
+        <div class="bottom-content">
+          <li class="mode">
+            <div class="sun-moon">
+              <i class="bx bx-moon icon moon"></i>
+              <i class="bx bx-sun icon sun"></i>
+            </div>
+            <span class="mode-text text">Dark mode</span>
+
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </div>
     </nav>
     <!-- Contenido Apa-->
 
     <section class="home">
-        <div
-            class="titlediv">
-            <h3 class= "title">Inventario</h3>
-            <!-- <a href="./index.html"><img src="assets/logo.jpg" alt="logo" width="75" height="75"></a> -->
-        </div>
+      <div class="titlediv">
+        <div class="text">Inventario</div>
+        <div class="text">Nombre del Inventario</div>
+        <!-- <a href="./index.html"><img src="assets/logo.jpg" alt="logo" width="75" height="75"></a> -->
+        
+          <i class="bx bx-search icon " ></i>
+          <input type="text" class="Search-item" placeholder="Search..." size="80" />
+        </li>
+      </div>
 
-        <!-- <div class="d-flex justify-content-end mb-3">
+      <!-- <div class="d-flex justify-content-end mb-3">
             <input type="text" id="inp_browse" placeholder="Buscar">
         </div> -->
-        
-        <div class="contenido">
+<!-- Comienzo de la Tabla-->
+
+      <div class="contenido">
         <div class="container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Column 1</th>
-                        <th>Column 2</th>
-                        <th>Column 3</th>
-                        <th>Column 4</th>
-                        <th>Column 5</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Cell 1</td>
-                        <td>Cell 2</td>
-                        <td>Cell 3</td>
-                        <td>Cell 4</td>
-                        <td>Cell 5</td>
-                    </tr>
-                    <tr>
-                        <td>Cell 1</td>
-                        <td>Cell 2</td>
-                        <td>Cell 3</td>
-                        <td>Cell 4</td>
-                        <td>Cell 5</td>
-                    </tr>
-                    <tr>
-                        <td>Cell 1</td>
-                        <td>Cell 2</td>
-                        <td>Cell 3</td>
-                        <td>Cell 4</td>
-                        <td>Cell 5</td>
-                    </tr>
-                    <tr>
-                        <td>Cell 1</td>
-                        <td>Cell 2</td>
-                        <td>Cell 3</td>
-                        <td>Cell 4</td>
-                        <td>Cell 5</td>
-                    </tr>
-                    <tr>
-                        <td>Cell 1</td>
-                        <td>Cell 2</td>
-                        <td>Cell 3</td>
-                        <td>Cell 4</td>
-                        <td>Cell 5</td>
-                    </tr>
-                </tbody>
-            </table>
+          
+          <table>
+            <thead>
+             
+              <br />
+              <tr>
+                <th>N°</th>
+                <th>Departamento</th>
+                <th>Categoria</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Cantidad</th>
+                <th>Serial</th>
+                <th>Movimiento</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cell 1</td>
+                <td>Cell 2</td>
+                <td>Cell 3</td>
+                <td>Cell 4</td>
+                <td>Cell 5</td>
+                <td>Cell 5</td>
+                <td>Cell 5</td>
+                <td>Cell 5</td>
+              </tr>
+              <tr>
+                <td>Cell 1</td>
+                <td>Cell 2</td>
+                <td>Cell 3</td>
+                <td>Cell 4</td>
+                <td>Cell 5</td>
+                <td>Cell 5</td>
+                <td>Cell 5</td>
+                <td>Cell 5</td>
+
+              </tr>
+              <tr>
+                <td>Cell 1</td>
+                <td>Cell 2</td>
+                <td>Cell 3</td>
+                <td>Cell 4</td>
+                <td>Cell 5</td>
+                <td>Cell 5</td>
+                <td>Cell 5</td>
+                <td>Cell 5</td>
+              </tr>
+              <tr>
+                <td>Cell 1</td>
+                <td>Cell 2</td>
+                <td>Cell 3</td>
+                <td>Cell 4</td>
+                <td>Cell 5</td>
+                <td>Cell 5</td>
+                <td>Cell 5</td>
+                <td>Cell 5</td>
+
+              </tr>
+              <tr>
+                <td>Cell 1</td>
+                <td>Cell 2</td>
+                <td>Cell 3</td>
+                <td>Cell 4</td>
+                <td>Cell 5</td>
+                <td>Cell 5</td>
+                <td>Cell 5</td>
+                <td>Cell 5</td>
+              </tr>
+              <tr>
+                <td>Cell 1</td>
+                <td>Cell 2</td>
+                <td>Cell 3</td>
+                <td>Cell 4</td>
+                <td>Cell 5</td>
+                <td>Cell 5</td>
+                <td>Cell 5</td>
+                <td>Cell 5</td>
+                
+              </tr>
+            </tbody>
+          </table>
         </div>
-    </div>
-    
+      </div>
     </section>
-
-
-
 
     <script src="./source/colorMode.js"></script>
     <script src="./source/index.js"></script>
-
-</body>
-
+  </body>
 </html>
 
 <!-- <!DOCTYPE html>
@@ -353,11 +377,6 @@
                                             <label for="inp_state">Estado</label>
                                         </div> -->
 
-
-
-
-
-
 <!-- </div>
                                     <div class="d-flex justify-content-center mt-3">
                                         <button type="submit" class="btn btn-primary" id="btn_update">Modificar!</button>
@@ -383,4 +402,5 @@
     <script type="module" src="./source/inventary.js"> </script>
 
 </body>
-</html> --> -->
+</html> -->
+-->

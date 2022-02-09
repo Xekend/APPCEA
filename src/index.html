@@ -1,75 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!----======== CSS ======== -->
-    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/custom.css" />
+    <link rel="stylesheet" href="./css/home.css" />
 
     <!----===== Boxicons CSS ===== -->
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-    <title>Inventario CEA</title>
+    <title>Inventario CEA Inicio</title>
 
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-</head>
+  </head>
 
-<body>
-
-
+  <body>
+    <!-- Inicio de la Navbar-->
     <nav class="sidebar close">
-        <header>
-            <div class="image-text">
-                <span class="image">
-                    <a href="./index.html">
-                        <img src="./assets/logo.jpg" alt="">
-                    </a>
-                </span>
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <a href="./index.html">
+              <img src="./assets/logo2.jpg" alt="" />
+            </a>
+          </span>
 
-                <div class="text logo-text">
-                    <span class="name">CDT DEV</span>
-                    <span class="profession">Registro de Inventario</span>
-                </div>
-            </div>
+          <div class="text logo-text">
+            <span class="name">CDT DEV</span>
+            <span class="profession">Registro de Inventario</span>
+          </div>
+        </div>
 
-            <i class='bx bx-chevron-right toggle'></i>
-        </header>
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
 
-        <div class="menu-bar">
-            <div class="menu">
+      <div class="menu-bar">
+        <div class="menu">
+          <li class="search-box">
+            <i class="bx bx-search icon"></i>
+            <input type="text" id="inp_browse" placeholder="Search..." />
+          </li>
 
-                <li class="search-box">
-                    <i class='bx bx-search icon'></i>
-                    <input type="text" id="inp_browse" placeholder="Search...">
-                </li>
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="./save_item.html">
+                <!-- <i class='bx bx-home-alt icon'></i> -->
+                <i class="bx bx-add-to-queue icon"></i>
+                <span class="text nav-text">Añadir</span>
+              </a>
+            </li>
 
-                <ul class="menu-links">
-                    <li class="nav-link">
-                        <a href="./save_item.html">
-                            <!-- <i class='bx bx-home-alt icon'></i> -->
-                            <i class='bx bx-add-to-queue icon '></i>
-                            <span class="text nav-text">Añadir</span>
-                        </a>
-                    </li>
+            <li class="nav-link">
+              <a href="./inventary.html">
+                <i class="bx bx-data icon"></i>
+                <span class="text nav-text">Inventario</span>
+              </a>
+            </li>
 
-                    <li class="nav-link">
-                        <a href="./inventary.html">
-                            <i class='bx bx-data icon' ></i>
-                            <span class="text nav-text">Inventario</span>
-                        </a>
-                    </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-printer icon"></i>
+                <span class="text nav-text">Imprimir</span>
+              </a>
+            </li>
 
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-printer icon' ></i>
-                            <span class="text nav-text">Imprimir</span>
-                        </a>
-                    </li>
-
-                    <!-- <li class="nav-link">
+            <!-- <li class="nav-link">
                         <a href="#">
                             <i class='bx bx-pie-chart-alt icon'></i>
                             <span class="text nav-text">Analytics</span>
@@ -89,49 +90,112 @@
                             <span class="text nav-text">Wallets</span>
                         </a>
                     </li> -->
-
-                </ul>
-            </div>
-
-            <div class="bottom-content">
-
-
-                <li class="mode">
-                    <div class="sun-moon">
-                        <i class='bx bx-moon icon moon'></i>
-                        <i class='bx bx-sun icon sun'></i>
-                    </div>
-                    <span class="mode-text text">Dark mode</span>
-
-                    <div class="toggle-switch">
-                        <span class="switch"></span>
-                    </div>
-                </li>
-
-            </div>
+          </ul>
         </div>
+        <!--Toggle Dark Mode Button-->
 
+        <div class="bottom-content">
+          <li class="mode">
+            <div class="sun-moon">
+              <i class="bx bx-moon icon moon"></i>
+              <i class="bx bx-sun icon sun"></i>
+            </div>
+            <span class="mode-text text">Dark mode</span>
+
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </div>
     </nav>
-    <!-- Contenido Apa-->
+    <!--Fin de la NavBar-->
+    <!-- Content-->
 
     <section class="home">
-        <div class="text">Inventario CEA</div>
-        <div class="padre">
-            <p class="Text">Centrado vertical y horizontal con FlexBox.</p>
-        </div>
-        <div class="padre2">
-            <p class="Text">Alinacion de Contenido </p>
-        </div>
+      <div class="text">Home</div>
+
+      <div class="program">
+        <article>
+          <div class="texthome">
+            <img src="./assets/nueva-base-de-datos.png" />
+            
+            <h3>Sistema de Inventario</h3>
+            <br />
+            <p>
+              Collaboratively administrate empowered markets via plug-and-play
+              networks.
+            </p>
+            
+          </div>
+        </article>
+        <article>
+          <div class="texthome">
+            <img src="./assets/nueva-base-de-datos.png" />
+            <h3>Sistema de Registro de Solicitud</h3>
+            <br />
+            <p>
+              Dramatically engage seamlessly visualize quality intellectual
+              capital without superior collaboration
+            </p>
+            
+          </div>
+        </article>
+        <article>
+          <div class="texthome">
+            <img src="./assets/actualizar.png" />
+            <h3>Sistema de Nomina</h3>
+            <br />
+            <p>
+              Completely synergize resource taxing relationships via premier
+              niche markets.
+            </p>
+            
+          </div>
+        </article>
+        <article>
+          <div class="texthome">
+            <img src="./assets/data-regular-240.png" />
+            <h2>Best in class</h2>
+            <br />
+            <p>
+              Imagine jumping into that boat, and just letting it sail wherever
+              the wind takes you...
+            </p>
+            
+          </div>
+        </article>
+        <article>
+          <div class="texthome">
+            <img src="./assets/data-regular-240.png" />
+            <h3>Dynamically innovate</h3>
+            <br />
+            <p>
+              Holisticly predominate extensible testing procedures for reliable
+            </p>
+            
+          </div>
+        </article>
+        <article>
+          <div class="texthome">
+            <img src="" />
+            <h3>Sanity check</h3>
+            <br />
+            <p>
+              Objectively innovate empowered manufactured products whereas
+              parallel platforms.
+            </p>
+            
+          </div>
+        </article>
+        <br />
+        <br />
+      </div>
     </section>
 
-
-
-    
     <script src="./source/colorMode.js"></script>
     <script src="./source/index.js"></script>
-
-</body>
-
+  </body>
 </html>
 
 <!-- <!DOCTYPE html>
